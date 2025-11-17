@@ -1,0 +1,56 @@
+{
+    "name": "almosabbirrakib/laravel-activity-log",
+    "description": "A comprehensive Laravel package for logging user activities with support for Blade, Vue 2, and Vue 3 frontends",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "activity-log",
+        "audit-log",
+        "user-activity",
+        "vue",
+        "blade"
+    ],
+    "authors": [
+        {
+            "name": "Al Mosabbir Rakib",
+            "email": "almosabbirrakib@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1|^8.2",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "illuminate/database": "^9.0|^10.0|^11.0",
+        "illuminate/http": "^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0|^9.0",
+        "phpunit/phpunit": "^9.5|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlMosabbirRakib\\ActivityLog\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlMosabbirRakib\\ActivityLog\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlMosabbirRakib\\ActivityLog\\ActivityLogServiceProvider"
+            ],
+            "aliases": {
+                "ActivityLog": "AlMosabbirRakib\\ActivityLog\\Facades\\ActivityLog"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
