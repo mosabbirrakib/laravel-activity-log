@@ -1,8 +1,21 @@
 {
-    "name": "laravel/laravel",
-    "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "name": "almosabbirrakib/laravel-activity-log",
+    "type": "library",
+    "description": "A comprehensive Laravel package for logging user activities with support for Blade, Vue 2, and Vue 3 frontends",
+    "keywords": [
+        "laravel",
+        "activity-log",
+        "audit-log",
+        "user-activity",
+        "vue",
+        "blade"
+    ],
+    "authors": [
+        {
+            "name": "Al-Mosabbir Rakib",
+            "email": "mrakib50.cse@gmail.com"
+        }
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.1",
