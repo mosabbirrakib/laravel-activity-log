@@ -629,15 +629,6 @@ The Laravel Activity Log package is open-sourced software licensed under the [MI
 
 ---
 
-## 📚 Additional Resources
-
-- [Installation Guide](packages/almosabbirrakib/laravel-activity-log/INSTALLATION.md)
-- [Usage Examples](packages/almosabbirrakib/laravel-activity-log/USAGE.md)
-- [Quick Start Guide](packages/almosabbirrakib/laravel-activity-log/QUICKSTART.md)
-- [Package Structure](packages/almosabbirrakib/laravel-activity-log/STRUCTURE.md)
-
----
-
 <p align="center">
 Made with ❤️ by <a href="https://github.com/mosabbirrakib">Al-Mosabbir Rakib</a>
 </p>
