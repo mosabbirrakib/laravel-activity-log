@@ -15,30 +15,28 @@ return new class extends Migration
     {
         Schema::create(config('activity-log.table_name', 'activity_logs'), function (Blueprint $table) {
             $table->id();
-            
+
             // Activity information
-            $table->string('type')->nullable()->index();
+            $table->string('type')->nullable();
             $table->text('description');
             $table->json('properties')->nullable();
-            
+
             // Subject (the model being acted upon)
             $table->nullableMorphs('subject');
-            
+
             // Causer (the user performing the action)
             $table->nullableMorphs('causer');
-            
+
             // Request information
             $table->string('ip_address', 45)->nullable();
             $table->text('user_agent')->nullable();
-            
+
             // Timestamps
             $table->timestamps();
-            
+
             // Indexes for better query performance
             $table->index('type');
             $table->index('created_at');
-            $table->index(['causer_type', 'causer_id']);
-            $table->index(['subject_type', 'subject_id']);
         });
     }
 
