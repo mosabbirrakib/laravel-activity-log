@@ -383,6 +383,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@import './activity-log.css';
+@import 'activity-log.css';
 </style>
 

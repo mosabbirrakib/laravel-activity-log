@@ -1,13 +1,26 @@
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "axios": "^1.6.4",
-        "laravel-vite-plugin": "^1.0.0",
-        "vite": "^5.0.0"
-    }
+  "name": "laravel-activity-log",
+  "version": "1.0.0",
+  "description": "Vue components for Laravel Activity Log package",
+  "main": "src/resources/js/components/ActivityLogVue3.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "laravel",
+    "activity-log",
+    "vue",
+    "vue2",
+    "vue3",
+    "audit-log"
+  ],
+  "author": "Al Mosabbir Rakib",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^2.6.0 || ^3.0.0"
+  },
+  "devDependencies": {
+    "vue": "^3.3.0"
+  }
 }
+
